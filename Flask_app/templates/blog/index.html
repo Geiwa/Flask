@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home page
+{% endblock %}
+{% block body %}
+{% for product in data %}
+
+{{ product.id }}
+{{ product.name}}
+{{ product.description }}
+{{ product.price }}
+
+{% endfor %}
+
+{% endblock %}
